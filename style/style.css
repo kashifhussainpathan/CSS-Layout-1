@@ -10,14 +10,16 @@
 :root {
     --color-primary: #edf1fd;
     --color-secondary: rgb(18, 155, 155);
+    --color-font: #454545;
 }
 
 body {
     width: 100vw;
+    height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
@@ -50,12 +52,6 @@ button:hover {
     border: 1px solid var(--color-secondary);
 }
 
-i {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-}
-
 .container {
     max-width: 90%;
     width: 80%;
@@ -66,13 +62,12 @@ i {
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
-.logo {
-    font-weight: 900;
-    font-size: 1.5rem;
+.fa-circle-user {
+    font-size: 2rem;
     color: var(--color-secondary);
 }
 
@@ -83,6 +78,9 @@ i {
     font-size: 1.2rem;
 }
 
+.nav-pill{
+    color: var(--color-font);
+}
 .nav-pill:hover {
     text-decoration: underline;
 }
@@ -97,9 +95,7 @@ i {
 .hero-section {
     display: flex;
     align-items: center;
-    padding: 0rem 2rem;
     justify-content: space-between;
-    margin-top: 70px;
 }
 
 .hero-left-section {
@@ -110,6 +106,7 @@ i {
     font-weight: 800;
     font-size: 38px;
     margin-bottom: 16px;
+    color: var(--color-font);
 }
 
 .hero-left-section h1 span {
@@ -122,6 +119,7 @@ i {
 .hero-left-section p {
     font-size: 500;
     font-size: 1.5rem;
+    color: var(--color-font);
 }
 
 .hero-left-section p span {
@@ -139,19 +137,38 @@ i {
 
 }
 
+.hero-right-section-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .hero-right-section img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
 
 }
+.hero-right-section-btn{
+    display: flex;
+    align-items: center;
+}
 
 .footer{
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
 }
+ .footer p{
+    font-size: 1.2rem;
+    color: var(--color-font);
+}
 .footer ul{
     display: flex;
-    gap: 30px;
+    gap: 4rem;
+}
+.footer .fa-brands{
+    font-size: 1.7rem;
+    display: inline-block;
+    color: var(--color-secondary);
 }
